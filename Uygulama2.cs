@@ -43,6 +43,70 @@ class Uygulama2
     }
 }
 
+//Uygulamanın kullanıcıdan veri aldığı versiyonu
+/*using System;
+using System.Collections.Generic;
 
+class Uygulama2
+{
+    
+    public static bool NumaraVarMi(List<string> liste, string aranan)
+    {
+        if (liste == null || liste.Count == 0)
+        {
+            return false;
+        }
+
+        foreach (string numara in liste)
+        {
+            if (numara == aranan)
+            {
+                return true; 
+            }
+        }
+
+        return false; 
+    }
+
+    static void Main(string[] args)
+    {
+        
+        List<string> numaralar = new List<string> { "101", "102", "103", "104", "105" };
+
+    
+
+        while (true)
+        {
+            Console.Write("Aramak istediğiniz numarayı giriniz (Çıkış için 'q' yazın): ");
+            string? arananInput = Console.ReadLine();
+
+        
+            if (arananInput?.ToLower() == "q")
+            {
+                Console.WriteLine("Programdan çıkılıyor...");
+                break;
+            }
+
+            
+            if (string.IsNullOrWhiteSpace(arananInput))
+            {
+                Console.WriteLine("[UYARI] Lütfen geçerli bir numara giriniz!\n");
+                continue;
+            }
+
+            
+            bool bulunduMu = NumaraVarMi(numaralar, arananInput);
+
+            if (bulunduMu)
+            {
+                Console.WriteLine($" [SONUÇ: True] '{arananInput}' numarası listede BULUNDU!\n");
+            }
+            else
+            {
+                Console.WriteLine($" [SONUÇ: False] '{arananInput}' numarası listede BULUNAMADI!\n");
+            }
+        }
+    }
+}*/
 
 
