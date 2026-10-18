@@ -90,7 +90,7 @@ class Uygulama2
             
             if (string.IsNullOrWhiteSpace(arananInput))
             {
-                Console.WriteLine("[UYARI] Lütfen geçerli bir numara giriniz!\n");
+                Console.WriteLine("UYARI Lütfen geçerli bir numara giriniz!\n");
                 continue;
             }
 
@@ -99,11 +99,11 @@ class Uygulama2
 
             if (bulunduMu)
             {
-                Console.WriteLine($" [SONUÇ: True] '{arananInput}' numarası listede BULUNDU!\n");
+                Console.WriteLine($" True '{arananInput}' numarası listede BULUNDU!\n");
             }
             else
             {
-                Console.WriteLine($" [SONUÇ: False] '{arananInput}' numarası listede BULUNAMADI!\n");
+                Console.WriteLine($" False'{arananInput}' numarası listede BULUNAMADI!\n");
             }
         }
     }
