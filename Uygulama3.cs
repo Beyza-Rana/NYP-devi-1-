@@ -82,18 +82,19 @@ namespace EkipmanTakip
                     Ogrenci? bulunanOgr = ogrenciler.Find(o => o.OgrenciNo == ogrNo);
                     if (bulunanOgr == null)
                     {
-                        Console.WriteLine("[HATA] Bu numarada kayıtlı öğrenci bulunamadı!");
+                        Console.WriteLine("Bu numarada kayıtlı öğrenci bulunamadı!");
                         continue;
                     }
 
-                    Console.Write("Ödünç Alınacak Demirbaş No Giriniz (Örn: EKP01): ");
+                    Console.Write("Ödünç Alınacak Demirbaş No Giriniz: ");
                     string? demirbasNo = Console.ReadLine();
 
                  
                     Ekipman? bulunanEkp = ekipmanlar.Find(e => e.DemirbasNo == demirbasNo);
                     if (bulunanEkp == null)
                     {
-                        Console.WriteLine("[HATA] Bu demirbaş numarasıyla ekipman bulunamadı!");
+                        Console.WriteLine("Bu demirbaş numarasıyla ekipman bulunamadı!");
+                        continue;
                     }
                     else if (bulunanEkp.OduncteMi)
                     {
@@ -114,7 +115,7 @@ namespace EkipmanTakip
                     Ekipman? bulunanEkp = ekipmanlar.Find(e => e.DemirbasNo == demirbasNo);
                     if (bulunanEkp == null)
                     {
-                        Console.WriteLine("[HATA] Bu demirbaş numarasıyla ekipman bulunamadı!");
+                        Console.WriteLine("Bu demirbaş numarasıyla ekipman bulunamadı!");
                     }
                     else if (!bulunanEkp.OduncteMi)
                     {
@@ -129,7 +130,7 @@ namespace EkipmanTakip
                 }
                 else
                 {
-                    Console.WriteLine("[HATA] Geçersiz seçim yaptınız!");
+                    Console.WriteLine("Geçersiz seçim yaptınız!");
                 }
             }
         }
